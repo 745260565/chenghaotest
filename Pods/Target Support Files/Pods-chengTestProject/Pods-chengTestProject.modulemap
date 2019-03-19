@@ -1,0 +1,6 @@
+framework module Pods_chengTestProject {
+  umbrella header "Pods-chengTestProject-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5FACA95BDCA9963006859A72 /* Pods_chengTestProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85945592EAD63EF3BF6BE64D /* Pods_chengTestProject.framework */; };
 		6A4382E9223F93680024C8D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4382E8223F93680024C8D4 /* AppDelegate.m */; };
 		6A4382EC223F93680024C8D4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4382EB223F93680024C8D4 /* ViewController.m */; };
 		6A4382EF223F93680024C8D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A4382ED223F93680024C8D4 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		56F8CABA0B0D81B0E793AE74 /* Pods-chengTestProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chengTestProject.debug.xcconfig"; path = "Target Support Files/Pods-chengTestProject/Pods-chengTestProject.debug.xcconfig"; sourceTree = "<group>"; };
 		6A4382E4223F93680024C8D4 /* chengTestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chengTestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A4382E7223F93680024C8D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6A4382E8223F93680024C8D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		6A4382F3223F93690024C8D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A4382F5223F93690024C8D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6A4382F6223F93690024C8D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7DDEB836A41C181910114F6C /* Pods-chengTestProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chengTestProject.release.xcconfig"; path = "Target Support Files/Pods-chengTestProject/Pods-chengTestProject.release.xcconfig"; sourceTree = "<group>"; };
+		85945592EAD63EF3BF6BE64D /* Pods_chengTestProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chengTestProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FACA95BDCA9963006859A72 /* Pods_chengTestProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		463CBCD8201118B134F2C450 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56F8CABA0B0D81B0E793AE74 /* Pods-chengTestProject.debug.xcconfig */,
+				7DDEB836A41C181910114F6C /* Pods-chengTestProject.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6A4382DB223F93680024C8D4 = {
 			isa = PBXGroup;
 			children = (
 				6A4382E6223F93680024C8D4 /* chengTestProject */,
 				6A4382E5223F93680024C8D4 /* Products */,
+				463CBCD8201118B134F2C450 /* Pods */,
+				DF72B627AE20EA824CD81495 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +88,14 @@
 			path = chengTestProject;
 			sourceTree = "<group>";
 		};
+		DF72B627AE20EA824CD81495 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85945592EAD63EF3BF6BE64D /* Pods_chengTestProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +103,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A4382FA223F93690024C8D4 /* Build configuration list for PBXNativeTarget "chengTestProject" */;
 			buildPhases = (
+				2E3BD97B4AC188A57335EE59 /* [CP] Check Pods Manifest.lock */,
 				6A4382E0223F93680024C8D4 /* Sources */,
 				6A4382E1223F93680024C8D4 /* Frameworks */,
 				6A4382E2223F93680024C8D4 /* Resources */,
+				C636EB9C4DAAF74E79E2DE7B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,71 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E3BD97B4AC188A57335EE59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-chengTestProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C636EB9C4DAAF74E79E2DE7B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chengTestProject/Pods-chengTestProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/FLAnimatedImage/FLAnimatedImage.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/QMUIKit/QMUIKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FLAnimatedImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJExtension.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QMUIKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-chengTestProject/Pods-chengTestProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6A4382E0223F93680024C8D4 /* Sources */ = {
@@ -283,6 +375,7 @@
 		};
 		6A4382FB223F93690024C8D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56F8CABA0B0D81B0E793AE74 /* Pods-chengTestProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +393,7 @@
 		};
 		6A4382FC223F93690024C8D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DDEB836A41C181910114F6C /* Pods-chengTestProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

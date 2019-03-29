@@ -10,6 +10,7 @@ target 'chengTestProject' do
    pod 'QMUIKit', '2.9.3'
    pod 'IQKeyboardManager', '6.2.0'
    pod 'pop', '1.0.12'
+   pod 'JXCategoryView'
    
    use_frameworks!
 
